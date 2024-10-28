@@ -7,11 +7,11 @@ const Products = () => {
     <section className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-col-1 w-[80%] ml-auto">
       <div className="sm:w-[250px] md:w-[200px] flex sm:block  border border-2 p-5 mr-2 mt-2">
         {/*  Image */}
-        <div className="w-[180px]">
+        <div className="w-[150px]">
           <img
             src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
             alt="Nike Air Monarch IV"
-            className="w-[160px] pt-5"
+            className="w-[150px] pt-8"
           />
         </div>
         {/*  Title */}
