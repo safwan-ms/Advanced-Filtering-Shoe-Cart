@@ -6,8 +6,8 @@ const App = () => {
   return (
     <>
       <Nav />
+      <Recommended />
       <Products />
-      {/* <Recommended /> */}
     </>
   );
 };

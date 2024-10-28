@@ -4,19 +4,19 @@ import { IoBagCheck } from "react-icons/io5";
 const Products = () => {
   return (
     // Card
-    <section className="grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-col-1 w-[80%] ml-auto">
-      <div className="sm:w-[250px] md:w-[200px] flex sm:block  border border-2 p-5 mr-2 mt-2">
+    <section className="product-body">
+      <div className="card">
         {/*  Image */}
-        <div className="w-[150px]">
+        <div className="card-image">
           <img
             src="https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg"
             alt="Nike Air Monarch IV"
-            className="w-[150px] pt-8"
+            className=" pt-10"
           />
         </div>
         {/*  Title */}
         <div className="pl-8 sm:p-0">
-          <h3 className="font-bold pt-3">Nike Air Monarch IV</h3>
+          <h3 className="card-title">Nike Air Monarch IV</h3>
           {/* Rating Stars */}
           <p className="flex pt-3">
             <AiFillStar className="text-yellow-500" />

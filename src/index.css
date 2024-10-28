@@ -2,3 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Product Component */
+  .product-body {
+    @apply grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 w-[70%] sm:w-[75%] md:w-[80%] ml-auto;
+  }
+  .card {
+    @apply sm:w-[250px] md:w-[200px] flex sm:block border border-2 p-3 sm:p-5 mr-2 mt-2;
+  }
+  .card-image {
+    @apply w-[150px];
+  }
+  .card-title {
+    @apply font-bold pt-3 text-sm;
+  }
+
+  /* Recommended Component */
+  .recommended {
+    @apply w-[70%] sm:w-[75%] md:w-[80%] ml-auto pt-4;
+  }
+  .recommended-btns {
+    @apply mr-2 border rounded-xl p-1 px-2 sm:px-3 mb-2 text-xs sm:text-sm border-gray-950;
+  }
+  .recommended-title {
+    @apply font-bold sm:text-xl;
+  }
+}
