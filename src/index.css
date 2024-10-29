@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  /* NavBar Component */
+  .nav-body {
+    @apply w-[70%] sm:w-[75%] md:w-[80%] ml-auto;
+  }
   /* Product Component */
   .product-body {
     @apply grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 w-[70%] sm:w-[75%] md:w-[80%] ml-auto;
@@ -26,5 +30,9 @@
   }
   .recommended-title {
     @apply font-bold sm:text-xl;
+  }
+  /* SideBar Component */
+  .sidebar-body {
+    @apply w-[30%] sm:w-[25%] md:w-[20%];
   }
 }
