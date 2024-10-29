@@ -26,7 +26,18 @@
     @apply w-[70%] sm:w-[75%] md:w-[80%] ml-auto pt-4;
   }
   .recommended-btns {
-    @apply mr-2 border rounded-xl p-1 px-2 sm:px-3 mb-2 text-xs sm:text-sm border-gray-950;
+    @apply mr-2 border
+     rounded-xl
+     p-1
+     px-2 
+     sm:px-3
+     mb-2
+     text-xs
+     sm:text-sm
+     border-gray-950
+     hover:bg-gray-950
+     hover:font-bold
+     hover:text-[#fff];
   }
   .recommended-title {
     @apply font-bold sm:text-xl;
@@ -34,5 +45,14 @@
   /* SideBar Component */
   .sidebar-body {
     @apply w-[25%] sm:w-[20%] md:w-[15%];
+  }
+  .sidebar-title {
+    @apply text-lg font-semibold sm:font-bold sm:text-xl mb-5 flex justify-center;
+  }
+  .sidebar-label-container {
+    @apply block relative mb-[10px] text-xs sm:text-base  sm:mb-[8px] md:pl-1 lg:pl-8 cursor-pointer;
+  }
+  .checkmark {
+    @apply pr-2;
   }
 }
