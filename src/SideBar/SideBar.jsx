@@ -3,14 +3,15 @@ import Colors from "./Colors/Colors";
 import Category from "./Category/Category";
 import Price from "./Price/Price";
 import { LiaOpencart } from "react-icons/lia";
+
 const SideBar = () => {
   return (
-    <section className="sidebar-body pt-28 sm:pt-6 h-[100%] z-10 border border-r-2 sm:z-20 bg-[#fff] fixed ">
-      <div className="flex justify-center align-center">
-        <LiaOpencart className="text-5xl " />
+    <section className="sidebar-body pt-20 sm:pt-6 h-full z-10 border-r bg-white fixed">
+      <div className="flex justify-center items-center py-4">
+        <LiaOpencart className="text-4xl" />
       </div>
 
-      <div>
+      <div className="px-4">
         <Category />
         <Price />
         <Colors />
