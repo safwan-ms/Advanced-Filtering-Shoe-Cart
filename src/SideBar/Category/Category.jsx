@@ -8,9 +8,9 @@ const Category = () => {
           <input type="radio" name="test" />
           <span className="checkmark"></span>All
         </label>
-        <label className="sidebar-label-container">
+        <label className="sidebar-label-container ">
           <input type="radio" name="test" />
-          <span className="checkmark"></span>Sneakers
+          <span className="checkmark"></span>Sneaker
         </label>
         <label className="sidebar-label-container">
           <input type="radio" name="test" />

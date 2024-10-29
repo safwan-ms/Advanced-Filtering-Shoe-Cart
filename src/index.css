@@ -5,14 +5,14 @@
 @layer components {
   /* NavBar Component */
   .nav-body {
-    @apply w-[70%] sm:w-[75%] md:w-[80%] ml-auto;
+    @apply w-[68%] sm:w-[72%] md:w-[80%] ml-auto;
   }
   /* Product Component */
   .product-body {
-    @apply grid lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 w-[70%] sm:w-[75%] md:w-[80%] ml-auto;
+    @apply grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-[68%] sm:w-[72%] md:w-[80%] ml-auto;
   }
   .card {
-    @apply sm:w-[200px] md:w-[200px]  flex sm:block border border-2 p-3 sm:p-5 m-2 mt-2;
+    @apply sm:w-[250px] md:w-[200px]  flex sm:block border border-2 p-3 sm:p-5 m-2 mt-2;
   }
   .card-image {
     @apply w-[150px];
@@ -23,7 +23,7 @@
 
   /* Recommended Component */
   .recommended {
-    @apply w-[70%] sm:w-[75%] md:w-[80%] ml-auto pt-4;
+    @apply w-[68%] sm:w-[72%] md:w-[80%] ml-auto pt-4;
   }
   .recommended-btns {
     @apply mr-2 border
@@ -44,15 +44,40 @@
   }
   /* SideBar Component */
   .sidebar-body {
-    @apply w-[25%] sm:w-[20%] md:w-[15%];
+    @apply w-[30%] sm:w-[25%] md:w-[15%];
   }
-  .sidebar-title {
-    @apply text-lg font-semibold sm:font-bold sm:text-xl mb-5 flex justify-center;
-  }
-  .sidebar-label-container {
-    @apply block relative mb-[10px] text-xs sm:text-base  sm:mb-[8px] md:pl-1 lg:pl-8 cursor-pointer;
-  }
-  .checkmark {
-    @apply pr-2;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer components {
+    /* SideBar Component */
+    .sidebar-title {
+      @apply text-lg font-semibold mb-5 flex justify-center; /* Center title */
+    }
+
+    .sidebar-label-container {
+      @apply flex items-center mb-2 text-base cursor-pointer; /* Align items and space out labels */
+      -webkit-user-select: none; /* Prevent user selection */
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; /* Prevent user selection */
+    }
+
+    .sidebar-label-container input {
+      @apply absolute opacity-0 cursor-pointer; /* Hide default radio button */
+    }
+
+    .sidebar-label-container:hover input ~ .checkmark {
+      @apply bg-gray-300; /* Change background on hover */
+    }
+
+    .sidebar-label-container input:checked ~ .checkmark {
+      @apply bg-orange-500; /* Change background when checked */
+    }
+
+    .checkmark {
+      @apply h-2 w-2 sm:h-5 sm:w-5 bg-gray-300 rounded-full mr-2; /* Add margin for spacing */
+    }
   }
 }
