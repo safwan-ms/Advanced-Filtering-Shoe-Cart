@@ -4,7 +4,7 @@ import { IoBagCheck } from "react-icons/io5";
 const Products = () => {
   return (
     // Card
-    <section className="product-body">
+    <section className="product-body ">
       <div className="card">
         {/*  Image */}
         <div className="card-image">
