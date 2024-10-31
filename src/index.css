@@ -15,7 +15,7 @@
     @apply sm:w-[200px] md:w-[170px] lg:w-[200px] xl:mb-10 flex sm:block border border-2 p-3 sm:p-5 m-2 mt-2;
   }
   .card-image {
-    @apply w-[150px] md:w-[140px] lg:w-[150px];
+    @apply w-[150px]  md:w-[140px] lg:w-[150px];
   }
   .card-title {
     @apply font-bold pt-3 text-sm;
@@ -54,7 +54,7 @@
     }
 
     .sidebar-label-container {
-      @apply flex items-center mb-2 text-base cursor-pointer text-xs sm:text-base; /* Align items and space out labels */
+      @apply flex items-center mb-2 cursor-pointer; /* Align items and space out labels */
       -webkit-user-select: none; /*Prevent user selection*/
       -moz-user-select: none;
       -ms-user-select: none;
@@ -71,9 +71,11 @@
     .sidebar-label-container input:checked ~ .checkmark {
       @apply bg-orange-500; /* Change background when checked */
     }
-
+    .gradient {
+      @apply bg-gradient-to-r from-blue-900 to-red-700;
+    }
     .checkmark {
-      @apply h-2 w-2 sm:h-5 sm:w-5 bg-gray-300 rounded-full mr-2; /* Add margin for spacing */
+      @apply h-4 w-4 sm:h-5 sm:w-5 bg-gray-300 rounded-full mr-2; /* Add margin for spacing */
     }
   }
 }

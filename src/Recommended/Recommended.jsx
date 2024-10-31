@@ -1,14 +1,19 @@
 import React from "react";
-const Recommended = () => {
+import Buttons from "../components/Buttons";
+const Recommended = ({ handleClick }) => {
   return (
     <div className=" recommended">
       <h1 className="recommended-title ">Recommended</h1>
-      <div>
-        <button className="recommended-btns">All Products</button>
-        <button className="recommended-btns">Nike</button>
-        <button className="recommended-btns">Adidas</button>
-        <button className="recommended-btns">Puma</button>
-        <button className="recommended-btns">Vans</button>
+      <div className="flex">
+        <Buttons
+          onClick={handleClick}
+          value="All Products"
+          title="All Products"
+        />
+        <Buttons onClick={handleClick} value="Nike" title="Nike" />
+        <Buttons onClick={handleClick} value="Adidas" title="Adidas" />
+        <Buttons onClick={handleClick} value="Puma" title="Puma" />
+        <Buttons onClick={handleClick} value="Vans" title="Vans" />
       </div>
     </div>
   );

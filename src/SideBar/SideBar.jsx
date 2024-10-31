@@ -4,7 +4,7 @@ import Category from "./Category/Category";
 import Price from "./Price/Price";
 import { LiaOpencart } from "react-icons/lia";
 
-const SideBar = () => {
+const SideBar = ({ handleChange }) => {
   return (
     <section className="sidebar-body pt-2 h-full z-10 border-r bg-white fixed ">
       <div>
@@ -13,9 +13,9 @@ const SideBar = () => {
         </div>
 
         <div className="px-4 ">
-          <Category />
-          <Price />
-          <Colors />
+          <Category handleChange={handleChange} />
+          <Price handleChange={handleChange} />
+          <Colors handleChange={handleChange} />
         </div>
       </div>
     </section>
