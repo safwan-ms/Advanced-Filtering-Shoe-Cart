@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaRegHeart } from "react-icons/fa6";
 import { TiShoppingCart } from "react-icons/ti";
 import { FaUserPlus } from "react-icons/fa6";
+import products from "../db/data";
 
-const Nav = ({ query, handleInputChange }) => {
+const Nav = ({ handleInputChange, query }) => {
   return (
     <div className="nav-body py-4 border-b-2 flex justify-between">
       <div>
