@@ -21,7 +21,14 @@ function App() {
       filteredProducts = filteredInput;
     }
     return products.map(({ img, title, reviews, prevPrice, newPrice }) => {
-      <Card key={Math.random()} img={img} />;
+      <Card
+        key={Math.random()}
+        img={img}
+        title={title}
+        reviews={reviews}
+        prevPrice={prevPrice}
+        newPrice={newPrice}
+      />;
     });
   }
   const result = filteredData(products, query);

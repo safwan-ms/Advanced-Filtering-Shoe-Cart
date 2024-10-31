@@ -5,7 +5,8 @@ const Products = ({ result }) => {
   return (
     // Card
     <section className="product-body">
-      <Card result={result} />
+      {/* <Card result={result} /> */}
+      {result}
     </section>
   );
 };
