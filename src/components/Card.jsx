@@ -3,7 +3,7 @@ import { AiFillStar } from "react-icons/ai";
 import { IoBagCheck } from "react-icons/io5";
 const Card = ({ img, title, reviews, prevPrice, newPrice }) => {
   return (
-    <div className="card ">
+    <div className="card flex">
       {/*  Image */}
       <div className="card-image">
         <img src={img} alt="Nike Air Monarch IV" className=" pt-10" />

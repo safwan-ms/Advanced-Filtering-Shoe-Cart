@@ -4,7 +4,7 @@ const Recommended = ({ handleClick }) => {
   return (
     <div className=" recommended">
       <h1 className="recommended-title ">Recommended</h1>
-      <div className="flex">
+      <div className="flex flex-wrap">
         <Buttons
           onClick={handleClick}
           value="All Products"

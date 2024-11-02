@@ -12,7 +12,7 @@
     @apply grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-[64%] sm:w-[71%] md:w-[70%] lg:w-[78%] ml-auto;
   }
   .card {
-    @apply sm:w-[200px] md:w-[170px] lg:w-[200px] xl:mb-10 flex sm:block border border-2 p-3 sm:p-5 m-2 mt-2;
+    @apply sm:w-[200px] md:w-[170px] lg:w-[200px] bg-white text-black xl:mb-10 flex sm:block border border-2 p-3 sm:p-5 m-2 mt-2;
   }
   .card-image {
     @apply w-[150px]  md:w-[140px] lg:w-[150px];

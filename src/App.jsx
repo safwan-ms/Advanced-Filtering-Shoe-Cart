@@ -3,7 +3,7 @@ import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import products from "./db/data";
 import Recommended from "./Recommended/Recommended";
-import Sidebar from "./Sidebar/Sidebar";
+import SideBar from "./SideBar/SideBar";
 import Card from "./components/Card";
 import "./index.css";
 
@@ -57,7 +57,6 @@ function App() {
           key={Math.random()}
           img={img}
           title={title}
-          star={star}
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
@@ -69,12 +68,12 @@ function App() {
   const result = filteredData(products, selectedCategory, query);
 
   return (
-    <>
-      <Sidebar handleChange={handleChange} />
+    <div className="">
+      <SideBar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
       <Products result={result} />
-    </>
+    </div>
   );
 }
 
