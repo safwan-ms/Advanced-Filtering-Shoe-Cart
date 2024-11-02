@@ -1,7 +1,7 @@
 import React from "react";
 import { AiFillStar } from "react-icons/ai";
 import { IoBagCheck } from "react-icons/io5";
-import products from "../db/data";
+
 const Card = ({ img, title, reviews, prevPrice, newPrice }) => {
   <div className="card ">
     {/*  Image */}

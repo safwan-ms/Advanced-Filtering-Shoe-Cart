@@ -12,24 +12,26 @@ function App() {
   const handleInputChange = (event) => {
     setQuery(event.target.value);
   };
-  const filteredInput = products.filter((product) =>
-    product.title.toLowerCase().indexOf(query.toLowerCase())
+  const filteredInput = products.filter(
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
   function filteredData(products, query) {
     let filteredProducts = products;
     if (query) {
       filteredProducts = filteredInput;
     }
-    return products.map(({ img, title, reviews, prevPrice, newPrice }) => {
-      <Card
-        key={Math.random()}
-        img={img}
-        title={title}
-        reviews={reviews}
-        prevPrice={prevPrice}
-        newPrice={newPrice}
-      />;
-    });
+    return filteredProducts.map(
+      ({ img, title, reviews, prevPrice, newPrice }) => {
+        <Card
+          key={Math.random()}
+          img={img}
+          title={title}
+          reviews={reviews}
+          prevPrice={prevPrice}
+          newPrice={newPrice}
+        />;
+      }
+    );
   }
   const result = filteredData(products, query);
   return (
