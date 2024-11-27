@@ -7,33 +7,33 @@ const Category = ({ handleChange, selectedCategory }) => {
     <div>
       <h1 className="sidebar-title">Category</h1>
       <div className="flex flex-col">
+        <label className="sidebar-label-container">
+          <input onChange={handleChange} type="radio" value="" name="test" />
+          <span className="checkmark"></span>All
+        </label>
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="sneakers"
           title="Sneakers"
-          name="category" // Changed name to be consistent for radio buttons
-          checked={selectedCategory === "sneakers"} // Checked based on selectedCategory
+          name="test"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="flats"
           title="Flats"
-          name="category"
-          checked={selectedCategory === "flats"}
+          name="test"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="sandals"
           title="Sandals"
-          name="category"
-          checked={selectedCategory === "sandals"}
+          name="test"
         />
         <Input
-          onChange={handleChange}
+          handleChange={handleChange}
           value="heels"
           title="Heels"
-          name="category"
-          checked={selectedCategory === "heels"}
+          name="test"
         />
       </div>
     </div>

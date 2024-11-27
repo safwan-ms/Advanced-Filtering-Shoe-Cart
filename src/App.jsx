@@ -57,6 +57,7 @@ function App() {
           key={Math.random()}
           img={img}
           title={title}
+          star={star}
           reviews={reviews}
           prevPrice={prevPrice}
           newPrice={newPrice}
@@ -66,7 +67,6 @@ function App() {
   }
 
   const result = filteredData(products, selectedCategory, query);
-
   return (
     <>
       <Sidebar handleChange={handleChange} />

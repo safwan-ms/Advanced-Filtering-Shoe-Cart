@@ -4,30 +4,33 @@ const Price = ({ handleChange }) => {
   return (
     <div>
       <section>
-        <h2 className="sidebar-title">Price</h2>
+        <h2 className="sidebar-title ">Price</h2>
 
         <Input
-          onChange={handleChange}
-          value={1499}
-          title="₹500 - ₹1499"
+          handleChange={handleChange}
+          value={50}
+          title="$0 - 50"
           name="test2"
         />
+
         <Input
-          onChange={handleChange}
-          value={2999}
-          title="₹1500 - ₹2999"
+          handleChange={handleChange}
+          value={100}
+          title="$50 - $100"
           name="test2"
         />
+
         <Input
-          onChange={handleChange}
-          value={3000}
-          title="₹3000 - ₹6999"
+          handleChange={handleChange}
+          value={150}
+          title="$100 - $150"
           name="test2"
         />
+
         <Input
-          onChange={handleChange}
-          value={10000}
-          title="₹7000 and above"
+          handleChange={handleChange}
+          value={200}
+          title="Over $150"
           name="test2"
         />
       </section>
