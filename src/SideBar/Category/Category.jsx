@@ -1,15 +1,15 @@
 import React from "react";
 import Input from "../../components/Input";
 
-const Category = ({ handleChange, selectedCategory }) => {
+const Category = ({ handleChange }) => {
   // Added selectedCategory prop
   return (
     <div>
       <h1 className="sidebar-title">Category</h1>
       <div className="flex flex-col">
-        <label className="sidebar-label-container">
+        <label className="text-xs sm:text-sm sidebar-label-container">
           <input onChange={handleChange} type="radio" value="" name="test" />
-          <span className="checkmark"></span>All
+          <span className=" checkmark"></span>All
         </label>
         <Input
           handleChange={handleChange}

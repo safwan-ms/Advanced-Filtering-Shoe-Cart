@@ -9,9 +9,9 @@ import "./index.css";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [query, setQuery] = useState("");
 
   // ----------- Input Filter -----------
-  const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
@@ -71,7 +71,7 @@ function App() {
     <>
       <Sidebar handleChange={handleChange} />
       <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
+      <Recommended onClickHandler={handleClick} />
       <Products result={result} />
     </>
   );

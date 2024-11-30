@@ -6,9 +6,9 @@ import { LiaOpencart } from "react-icons/lia";
 
 const SideBar = ({ handleChange }) => {
   return (
-    <section className="sidebar-body pt-2 h-full z-10 border-r bg-white fixed ">
+    <section className="fixed z-10 h-full pt-2 bg-white border-r sidebar-body ">
       <div>
-        <div className="flex justify-center items-center py-1">
+        <div className="flex items-center justify-center py-1">
           <LiaOpencart className="text-5xl" />
         </div>
 

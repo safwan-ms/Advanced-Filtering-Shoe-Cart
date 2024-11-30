@@ -34,6 +34,7 @@
      mb-2
      text-xs
      sm:text-sm
+     cursor-pointer
      border-gray-950
      hover:bg-gray-950
      hover:font-bold
