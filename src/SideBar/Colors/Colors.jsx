@@ -5,7 +5,7 @@ const Colors = ({ handleChange }) => {
     <div>
       <div>
         <h2 className="sidebar-title color-title">Colors</h2>
-        <label className="sidebar-label-container">
+        <label className="text-xs sidebar-label-container">
           <input
             handleChange={handleChange}
             type="radio"
@@ -48,7 +48,7 @@ const Colors = ({ handleChange }) => {
           color="green"
         />
 
-        <label className="sidebar-label-container">
+        <label className="text-xs sidebar-label-container">
           <input
             onChange={handleChange}
             type="radio"
